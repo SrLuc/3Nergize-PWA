@@ -1,5 +1,5 @@
 //pages
-import Home from "./pages/ Home";
+import Home from "./pages/Home";
 import Analysis from "./pages/Analysis";
 import Calculator from "./pages/Calculator";
 
