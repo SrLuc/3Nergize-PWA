@@ -23,7 +23,7 @@ const AnalisyPanel = ({}: AnalisyPanelProps) => {
   }, []);
 
   let valor = myValue;
-  let valorTotal = parseInt(valor)
+  let valorTotal = parseInt(valor) || 0
 
   let g = valorTotal * 0.40; //geração
   let t = valorTotal * 0.03 //transmissão
