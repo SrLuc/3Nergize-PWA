@@ -11,7 +11,7 @@ import hand from "../../assets/hand.svg";
 
 interface AnalisyPanelProps {}
 
-const AnalisyPanel = ({}: AnalisyPanelProps) => {
+const AnalysisPanel = ({}: AnalisyPanelProps) => {
 
   const [myValue, setMyValue] = useState('');
 
@@ -29,7 +29,7 @@ const AnalisyPanel = ({}: AnalisyPanelProps) => {
   let t = valorTotal * 0.03 //transmissão
   let d = valorTotal * 0.16 //distribuição
   let e = valorTotal * 0.09 //encargos
-  let tri =valorTotal * 0.31 // tributos
+
   
   return (
     <S.StyledAnalisyPanel>
@@ -72,4 +72,4 @@ const AnalisyPanel = ({}: AnalisyPanelProps) => {
   );
 };
 
-export default AnalisyPanel;
+export default AnalysisPanel;

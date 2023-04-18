@@ -35,13 +35,13 @@ label {
 }
   input {
     width: 90%;
-    height: 60px;
+    height: 50px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     border: none;
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 68px;
     font-size: 16px;
     text-align: center;
     
@@ -50,7 +50,7 @@ label {
 
   button {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 15px;
     width: 81px;
     height: 46px;
@@ -83,8 +83,7 @@ border-radius: 5px;
 p{
     font-size:1.3em
 }
-}`
-
+`
  
 
  export const StyledDisplayValor = styled.div`
@@ -96,7 +95,7 @@ height: 110px;
 display: flex;
 justify-content: center;
 padding: 15px;
-margin-bottom: 40px
+margin-bottom: 40px;
 font-weight: 400;
 font-size: 15px;
 text-align: center;
@@ -105,13 +104,11 @@ h3 {
 }
 
 p{font-size:1.7em}
-}`
+`
  
  export const StyledDisplayWrapper = styled.div`
  display: flex;
  justify-content: space-around;
-
  margin-bottom: 15%;
-}
 `
 
