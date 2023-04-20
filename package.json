@@ -12,6 +12,7 @@
     "@types/react-dom": "^18.0.11",
     "@types/styled-components": "^5.1.26",
     "@types/typescript": "^2.0.0",
+    "d3": "^7.8.4",
     "i": "^0.3.7",
     "npm": "^9.6.4",
     "react": "^18.2.0",
@@ -59,5 +60,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/d": "^1.0.1",
+    "@types/d3": "^7.4.0"
   }
 }

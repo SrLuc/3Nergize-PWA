@@ -35,7 +35,8 @@ export const StyledApresentation = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-
+position: relative;
+  top: 10vh;
   padding: 25px;
 
   h1 {
@@ -93,6 +94,7 @@ export const StyledBottomSearch = styled.div`
   h6{
     color: #5e5e5f;
   }
+  
 
 `;
 
