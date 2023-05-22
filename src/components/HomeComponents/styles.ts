@@ -108,7 +108,7 @@ export const StyledBarChat = styled.div `
   background-color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
-  height: 180px;
+  height: 185px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 border-radius: 10px;
 }
@@ -121,7 +121,7 @@ border-radius: 10px;
 
 .divBar{
   position: relative;
-  top: 25px;
+  top: 40px;
   right:105px;
   background-color: pink;
 }
@@ -155,6 +155,7 @@ h1 {
   font-weight: 300;
   margin-left: 70px;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 button {
@@ -205,6 +206,13 @@ border-radius: 10px;
   height: 25px;
   border-radius: 10px;
 
+}
+
+.message {
+  position: relative;
+  top: 47px;
+  color: black;
+  right: -15px;
 }
 
 

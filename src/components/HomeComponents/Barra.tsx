@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as d3 from "d3";
-import "./styles.ts"; // Importe o arquivo CSS para estilização
+import "./styles.ts";
 import logo from "../../image/logo.png";
 
 interface BarChartProps {
@@ -26,6 +26,18 @@ export function BarChart({ maxValue, width, onMaxValueChange }: BarChartProps) {
 
   const valor = parseInt(myValue || "0");
   const barWidth = (valor / currentMaxValue) * width;
+
+  let message = "";
+
+  if (valor > currentMaxValue) {
+    message = "O consumo ultrapassou o limite";
+  } else if (valor > currentMaxValue * 0.7) {
+    message = "O consumo está perto do limite";
+  } else if (valor > currentMaxValue / 2) {
+    message = "O consumo está bom";
+  } else {
+    message = "Ótimo consumo";
+  }
 
   useEffect(() => {
     const storedValue = localStorage.getItem("valorTotal");
@@ -62,15 +74,19 @@ export function BarChart({ maxValue, width, onMaxValueChange }: BarChartProps) {
             borderRadius: `20px`,
           }}
         >
-          <div
+        <div
             className="bar"
             style={{
               width: `${barWidth}px`,
-              backgroundColor: color(parseInt(myValue || "0")),
+              backgroundColor: color(valor),
             }}
-          />
+          ></div>
         </div>
+      
       </div>
+      <div className="message">
+         {message}
+        </div>
       <img src={logo} className="logo" alt="Descrição da imagem" />
 
       <div className="value-container">
@@ -79,7 +95,7 @@ export function BarChart({ maxValue, width, onMaxValueChange }: BarChartProps) {
             Meta atual: <strong>{"R$" + currentMaxValue}</strong>
           </label>
         </div>
-        <button className="input" onClick={() => setIsPopupOpen(true)}>
+        <button type="button" className="input" onClick={() => setIsPopupOpen(true)}>
           Atualizar Meta
         </button>
       </div>
@@ -88,13 +104,13 @@ export function BarChart({ maxValue, width, onMaxValueChange }: BarChartProps) {
         <div className="popup-container">
             <div className="backgroundpop">
           <h2>Definir Novo Valor</h2>
-          <input
+          <input aria-label="numero"
             type="number"
             value={newMaxValue}
             onChange={handleMaxValueChange}
           />
-          <button onClick={handleSaveButtonClick}>Salvar</button>
-          <button onClick={handleCancelButtonClick}>Cancelar</button>
+          <button type="button" onClick={handleSaveButtonClick}>Salvar</button>
+          <button type="button" onClick={handleCancelButtonClick}>Cancelar</button>
         </div>
         </div>
       )}
