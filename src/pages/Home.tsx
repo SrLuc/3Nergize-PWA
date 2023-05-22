@@ -7,6 +7,7 @@ import NavBottomBar from '../components/NavBottomBar/NavBottomBar';
 import Search from '../components/HomeComponents/Search';
 import Apresentation from '../components/HomeComponents/Apresentation';
 import BottomSearch from '../components/HomeComponents/BottomSearch';
+import { StyledBarChat } from '../components/HomeComponents/styles';
 
 interface HomeProps {}
 
@@ -27,15 +28,15 @@ const Home = ({}: HomeProps) => {
     return (
         <S.StyledHomePage>
             <Search amount={50} />
-            <BarChart
+            <StyledBarChat><BarChart
                 value={0}
                 maxValue={maxValue}
-                width={300}
+                width={250}
                 height={20}
                 borderRadius={10}
                 onMaxValueChange={handleMaxValueChange}
             />
-
+</StyledBarChat>
             <Apresentation />
             <BottomSearch />
             <NavBottomBar />

@@ -95,7 +95,117 @@ export const StyledBottomSearch = styled.div`
     color: #5e5e5f;
   }
   
+`
+;
 
-`;
+
+export const StyledBarChat = styled.div `
+.bar-chart-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  height: 180px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+
+.bar-container {
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.divBar{
+  position: relative;
+  top: 25px;
+  right:105px;
+  background-color: pink;
+}
+
+img {
+  width: 50px;
+  height: 90px;
+  align-self: baseline;
+  position: relative;
+  top: 12px;
+}
+
+label {
+  font-weight: 400;
+}
 
 
+h1 {
+  margin-top: 15px;
+  font-weight: 300;
+  align-self: baseline;
+  margin-left: 15px;
+}
+
+.value-container {
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  gap: 40px;
+  font-weight: 300;
+  margin-left: 70px;
+  align-items: center;
+}
+
+button {
+  color: #009500;
+  width: 100px;
+  height: 26px;
+
+background: #FFFFFF;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+}
+
+.backgroundpop {
+  background-color: rgb(6, 163, 124);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  line-height: 2;
+  color: white;
+  z-index: 999;
+  position:relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.backgroundpop > h2 {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.backgroundpop > button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.backgroundpop > input {
+  border:none;
+  height: 25px;
+  border-radius: 10px;
+
+}
+
+
+`
