@@ -40,7 +40,7 @@
 
   "start_url": ".",
   "scope": ".",
-  "display": "fullscreen",
+  "display": "standalone",
   "theme_color": "#f5f5f5",
   "background_color": "#f5f5f5",
   "description": "Um APP para analisar e otimizar o seu uso de energia elétrica!.",

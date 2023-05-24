@@ -1,11 +1,10 @@
 
 # 3nergizer
+This project was developed by me and my college team for the Mobile Coding discipline.
 
-This project was developed by me and my college squad, for the Coding Mobile discipline
+3nergize is an app that enables you to calculate daily, weekly, and monthly expenses for the kWh consumed during a specific period.
 
-3nergize is an app that allows you to calculate the daily, weekly and monthly expenses of the KWh consumed during a certain period.
-
-An app not only capable of measuring energy costs, but also informing how these costs are distributed, from energy generation to the taxes that are levied
+It's not just an app that measures energy costs; it also provides information on how these costs are distributed, from energy generation to the applicable taxes.
 
 **Link to Application** 
 
