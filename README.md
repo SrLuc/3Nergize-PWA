@@ -8,7 +8,7 @@ It's not just an app that measures energy costs; it also provides information on
 
 **Link to Application** 
 
-https://3nergize-kzezfkdqu-lcourtneey.vercel.app
+https://3nergize-lcourtneey.vercel.app/
 
 ## Images
 
